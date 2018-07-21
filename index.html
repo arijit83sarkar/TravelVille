@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class="teal">
             <div class="container">
@@ -65,6 +66,40 @@
         </li>
     </ul>
 
+    <!-- Section : Slider -->
+
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/resort1.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h2>Take Your Dream Vacation</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptas totam atque ea, id nobis
+                        autem. Quam, iusto! Quis, rem.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort2.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h2>We Work With All Bidgets</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem necessitatibus rerum earum voluptates
+                        expedita qui dolores accusamus quod autem magni!</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort3.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h2>Group & Indivual Gateway</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae velit tenetur eum distinctio at
+                        cupiditate molestias eos voluptas odit.</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
@@ -72,6 +107,15 @@
         // Sidenav
         const sideNav = document.querySelector(".sidenav");
         M.Sidenav.init(sideNav, {});
+
+        // Slider
+        const slider = document.querySelector(".slider");
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 500,
+            transition: 500,
+            interval: 6000
+        });
     </script>
 </body>
 
